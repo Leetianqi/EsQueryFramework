@@ -1,4 +1,4 @@
-package com.example.esqueryframework;
+package com.es.esqueryframework;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
