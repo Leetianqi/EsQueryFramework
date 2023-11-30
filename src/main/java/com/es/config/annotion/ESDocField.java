@@ -12,7 +12,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ESDocField {
     /**
-     * ES 字段名称
+     * ES索引的字段名称
      */
     String fieldName() default "";
 

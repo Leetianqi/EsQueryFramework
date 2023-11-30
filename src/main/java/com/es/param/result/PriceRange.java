@@ -1,0 +1,1 @@
+package com.es.param.result;import lombok.Data;/** * @Date 2023/4/15 16:34 * @author runxiu.li * @Description 价格范围 */@Datapublic class PriceRange {    /**     * 起始价格     */    private Double from;    /**     * 终止价格     */    private Double to;}

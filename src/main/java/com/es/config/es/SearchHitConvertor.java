@@ -1,0 +1,1 @@
+package com.es.config.es;import org.elasticsearch.search.SearchHit;public interface SearchHitConvertor<T> {    T convert(SearchHit searchHit);}

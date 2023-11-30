@@ -1,4 +1,4 @@
-package com.es.query;
+package com.es.param;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

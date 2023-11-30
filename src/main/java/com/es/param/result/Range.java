@@ -1,0 +1,1 @@
+package com.es.param.result;import lombok.Data;/** * @Date 2023/4/25 13:47 * @author runxiu.li * @Description TODO */@Datapublic class Range {    private Long from;    private Long to;}

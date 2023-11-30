@@ -1,4 +1,4 @@
-package com.es.query;
+package com.es.param;
 
 
 import cn.hutool.core.util.ObjectUtil;
@@ -11,20 +11,10 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * 注:
  * 1.该参数为订阅查询的入参,理论上都是单个值，为了扩展性，某些字段提供了模糊查询
- * 2.该参数为订阅查询的入参,存在部分字段不支持查询的情况，部分排序字段参：com.nio.dd.vo.agg.shared.enums.OrderColumnEnum
- * <p>
- * 名词解释:
- * 1.可为空（isCanBeEmpty = true）:意思是对应的fieldName字段不存在时，也符合条件
- * 对应的字段如果是数组[],当可为空时:如果数组[]为空，则不要拼接查询条件（即不需要此条件过滤）;如果数组[]不为空时,则拼接上字段可为空的条件
- * 对应的字段如果是Object(非数组),当可为空时:如果Object(非数组)为空，则不要拼接查询条件（即不需要此条件过滤）;如果Object(非数组)不为空时,则拼接上字段可为空的条件
- * 也就是说可为空（isCanBeEmpty = true），只针对对象不为空时，可以拼接上字段为空的过滤条件；当对象为空时，就不做处理
- * 2.不可为空（isCanBeEmpty = false）:意思是对应的fieldName字段不存在时，不符合条件
- * 同理
- * <p>
- * 3.支持反选（isInverse = true），只用来修饰非数组对象
- * 非数组对象为空时,需要构建条件即该字段为空,或者为0（此处和业务强相关）;当非数组对象不为空时,正常处理即可
+ * 2.该参数为订阅查询的入参,存在部分字段不支持查询的情况，部分排序字段参：OrderColumnEnum
  * <p>
  * 只是用来查询的接口
+ * 因为
  *
  * @author runxiu.li
  */
@@ -32,7 +22,6 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class EsSubscriptionQueryParam {
     //订阅基本信息
-
     /**
      * 订阅no,非必填,单选,不可为空
      */

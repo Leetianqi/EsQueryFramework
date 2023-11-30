@@ -10,8 +10,6 @@ import java.util.stream.Stream;
 
 @Getter
 public enum OrderColumnEnum {
-
-    LAST_MATCH_TIME("subscription_info.last_match_time"),
     /**
      * 不需要默认 要把它删除掉
      */
